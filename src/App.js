@@ -9,7 +9,7 @@ function App() {
 			<Header />
 			<Routes>
 				<Route exact path="/" element={<About />}></Route>
-				<Route exact path="/albums" element={<Music />}></Route>
+				<Route path="/albums" element={<Music />}></Route>
 			</Routes>
 		</>
 	);

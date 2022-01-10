@@ -1,20 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
+import "./style.css";
 
 function Album({ albumData }) {
-	console.log("albumData", albumData);
-	console.log("tracklist", albumData.tracklist);
+	const [tracklistVisible, setTracklistVisible] = useState(false);
+	const showHide = tracklistVisible ? "Hide" : "Show";
 	const trackList = albumData.tracklist.map(track => (
 		<li key={albumData.id + "-" + track.id}>{track.title}</li>
 	));
+
+	const toggleTracks = () => {
+		setTracklistVisible(!tracklistVisible);
+	};
 	return (
-		<>
-			<h3>
-				{albumData.title} <span>({albumData.releaseDate})</span>
-			</h3>
-			<p>Fun fact: {albumData.funFact}</p>
-			<p>Tracks:</p>
-			<ul>{trackList}</ul>
-		</>
+		<section>
+			<div className="album-info">
+				<h3>
+					{albumData.title} <span>({albumData.releaseDate})</span>
+				</h3>
+				<img src={albumData.coverLink} alt={albumData.title + " album cover"} />
+				<p>Fun fact: {albumData.funFact}</p>
+				<button onClick={toggleTracks}>{showHide} tracks</button>
+			</div>
+			{tracklistVisible && (
+				<div className="tracks-div">
+					<p>Tracks:</p>
+					<ul>{trackList}</ul>
+				</div>
+			)}
+		</section>
 	);
 }
 

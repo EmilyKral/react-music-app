@@ -1,0 +1,10 @@
+section {
+	display: flex;
+}
+
+.album-info {
+}
+
+img {
+	max-width: 400px;
+}
