@@ -1,8 +1,5 @@
-section {
+.album {
 	display: flex;
-}
-
-.album-info {
 }
 
 .album-cover {

@@ -4,10 +4,10 @@ import "./style.css";
 
 function About() {
 	return (
-		<>
+		<main>
 			<PhotoCarousel />
 			<Bio />
-		</>
+		</main>
 	);
 }
 

@@ -2,7 +2,11 @@ import React from "react";
 import { AlbumList } from "../../components";
 
 function Music() {
-	return <AlbumList />;
+	return (
+		<main>
+			<AlbumList />
+		</main>
+	);
 }
 
 export default Music;

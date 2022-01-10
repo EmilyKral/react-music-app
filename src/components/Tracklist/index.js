@@ -1,8 +1,12 @@
 import React from "react";
+import { LikeButton } from "..";
 
 function Tracklist({ tracklist, albumId }) {
 	const tracklistItems = tracklist.map(track => (
-		<li key={albumId + "-" + track.id}>{track.title}</li>
+		<li key={albumId + "-" + track.id}>
+			<p>{track.title}</p>
+			<LikeButton />
+		</li>
 	));
 	return (
 		<div className="tracks-div">

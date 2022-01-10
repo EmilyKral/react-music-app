@@ -44,9 +44,9 @@ function AlbumList() {
 		}
 	]);
 	const albumList = albums.map(album => (
-		<div>
+		<section>
 			<Album albumData={album} />
-		</div>
+		</section>
 	));
 	return (
 		<>

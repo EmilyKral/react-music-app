@@ -10,7 +10,7 @@ function Album({ albumData }) {
 		setTracklistVisible(!tracklistVisible);
 	};
 	return (
-		<section>
+		<div className="album">
 			<div className="album-info">
 				<h3>
 					{albumData.title} <span>({albumData.releaseDate})</span>
@@ -24,7 +24,7 @@ function Album({ albumData }) {
 				<button onClick={toggleTracks}>{showHide} tracks</button>
 			</div>
 			{tracklistVisible && <Tracklist tracklist={albumData.tracklist} albumId={albumData.id} />}
-		</section>
+		</div>
 	);
 }
 
