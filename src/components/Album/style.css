@@ -2,6 +2,36 @@
 	display: flex;
 }
 
+.album-info {
+	width: 50%;
+}
+
 .album-cover {
-	max-width: 400px;
+	max-width: 600px;
+	width: 100%;
+	display: block;
+}
+
+.show-buttons {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.show-button {
+	padding: 10px;
+	background-color: white;
+	font-size: 1em;
+}
+
+.show-button:hover {
+	background-color: white;
+}
+
+.show-tracks {
+	width: 110px;
+}
+
+.show-fact {
+	width: 125px;
 }

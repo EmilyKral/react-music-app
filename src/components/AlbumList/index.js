@@ -59,11 +59,7 @@ function AlbumList() {
 			coverLink: "https://images.genius.com/638e4c9f2e85e03f55b1b1cb91d38c69.1000x1000x1.jpg"
 		}
 	]);
-	const albumList = albums.map(album => (
-		<section>
-			<Album albumData={album} />
-		</section>
-	));
+	const albumList = albums.map(album => <Album albumData={album} />);
 	return <>{albumList}</>;
 }
 

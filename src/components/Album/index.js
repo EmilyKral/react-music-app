@@ -4,27 +4,36 @@ import "./style.css";
 
 function Album({ albumData }) {
 	const [tracklistVisible, setTracklistVisible] = useState(false);
-	const showHide = tracklistVisible ? "Hide" : "Show";
+	const [factVisible, setFactVisible] = useState(false);
+	const showHideTrack = tracklistVisible ? "Hide" : "Show";
+	const showHideFact = factVisible ? "Hide" : "Show";
 
-	const toggleTracks = () => {
-		setTracklistVisible(!tracklistVisible);
-	};
 	return (
-		<div className="album">
+		<section className="album">
 			<div className="album-info">
 				<h3>
-					{albumData.title} <span>({albumData.releaseDate})</span>
+					{albumData.title} <span className="release-date">({albumData.releaseDate})</span>
 				</h3>
 				<img
 					src={albumData.coverLink}
 					alt={albumData.title + " album cover"}
 					className="album-cover"
 				/>
-				<p>Fun fact: {albumData.funFact}</p>
-				<button onClick={toggleTracks}>{showHide} tracks</button>
+				<div className="show-buttons">
+					<button onClick={() => setFactVisible(!factVisible)} className="show-button show-fact">
+						{showHideFact} fun fact
+					</button>
+					<button
+						onClick={() => setTracklistVisible(!tracklistVisible)}
+						className="show-button show-tracks"
+					>
+						{showHideTrack} tracks
+					</button>
+				</div>
+				{factVisible && <p>Fun fact: {albumData.funFact}</p>}
 			</div>
 			{tracklistVisible && <Tracklist tracklist={albumData.tracklist} albumId={albumData.id} />}
-		</div>
+		</section>
 	);
 }
 

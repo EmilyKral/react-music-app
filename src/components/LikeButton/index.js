@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faThumbsUp } from "@fortawesome/free-solid-svg-icons";
 import "./style.css";
 
 function LikeButton() {
@@ -8,7 +10,7 @@ function LikeButton() {
 			className={liked ? "liked like-button" : "not-liked like-button"}
 			onClick={() => setLiked(!liked)}
 		>
-			Like
+			<FontAwesomeIcon icon={faThumbsUp} />
 		</button>
 	);
 }
