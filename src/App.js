@@ -1,7 +1,12 @@
 import React from "react";
+import { Music, Introduction } from "./pages";
 
 function App() {
-	return <h1>Tessaaaaa</h1>;
+	return (
+		<>
+			<Introduction />
+		</>
+	);
 }
 
 export default App;
