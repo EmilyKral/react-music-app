@@ -17,7 +17,11 @@ function Album({ albumData }) {
 				<h3>
 					{albumData.title} <span>({albumData.releaseDate})</span>
 				</h3>
-				<img src={albumData.coverLink} alt={albumData.title + " album cover"} />
+				<img
+					src={albumData.coverLink}
+					alt={albumData.title + " album cover"}
+					className="album-cover"
+				/>
 				<p>Fun fact: {albumData.funFact}</p>
 				<button onClick={toggleTracks}>{showHide} tracks</button>
 			</div>
