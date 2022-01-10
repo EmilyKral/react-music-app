@@ -1,2 +1,2 @@
-export { default as Introduction } from "./Introduction";
+export { default as About } from "./About";
 export { default as Music } from "./Music";

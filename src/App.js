@@ -1,10 +1,16 @@
 import React from "react";
-import { Music, Introduction } from "./pages";
+import { Routes, Route } from "react-router-dom";
+import { Music, About } from "./pages";
+import { Header } from "./layout";
 
 function App() {
 	return (
 		<>
-			<Introduction />
+			<Header />
+			<Routes>
+				<Route exact path="/" element={<About />}></Route>
+				<Route exact path="/albums" element={<Music />}></Route>
+			</Routes>
 		</>
 	);
 }

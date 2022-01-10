@@ -1,7 +1,7 @@
 import React from "react";
 import { Bio, AlbumList } from "../../components";
 
-function Introduction() {
+function About() {
 	return (
 		<>
 			<h1>Tessaaaaa</h1>
@@ -10,4 +10,4 @@ function Introduction() {
 	);
 }
 
-export default Introduction;
+export default About;
