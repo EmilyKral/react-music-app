@@ -5,6 +5,7 @@ import "./style.css";
 function About() {
 	return (
 		<main>
+			<h2>About</h2>
 			<PhotoCarousel />
 			<Bio />
 		</main>

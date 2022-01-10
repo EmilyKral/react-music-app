@@ -1,12 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap");
 
+html,
+* {
+	box-sizing: content-box;
+}
+
 body {
 	font-family: Montserrat;
 	width: 100%;
+	margin: 0;
 }
 
 main {
-	width: max-content;
+	max-width: 1200px;
 	margin: 0 auto;
 }
 
