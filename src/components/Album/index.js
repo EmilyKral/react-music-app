@@ -1,12 +1,10 @@
 import React, { useState } from "react";
+import { Tracklist } from "..";
 import "./style.css";
 
 function Album({ albumData }) {
 	const [tracklistVisible, setTracklistVisible] = useState(false);
 	const showHide = tracklistVisible ? "Hide" : "Show";
-	const trackList = albumData.tracklist.map(track => (
-		<li key={albumData.id + "-" + track.id}>{track.title}</li>
-	));
 
 	const toggleTracks = () => {
 		setTracklistVisible(!tracklistVisible);
@@ -25,12 +23,7 @@ function Album({ albumData }) {
 				<p>Fun fact: {albumData.funFact}</p>
 				<button onClick={toggleTracks}>{showHide} tracks</button>
 			</div>
-			{tracklistVisible && (
-				<div className="tracks-div">
-					<p>Tracks:</p>
-					<ul>{trackList}</ul>
-				</div>
-			)}
+			{tracklistVisible && <Tracklist tracklist={albumData.tracklist} albumId={albumData.id} />}
 		</section>
 	);
 }

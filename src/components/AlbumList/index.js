@@ -19,7 +19,7 @@ function AlbumList() {
 				{ id: 9, title: "The Things I Do" },
 				{ id: 10, title: "Now That We're Done" }
 			],
-			funFact: "This was her debut album but has since been removed from all streaming platforms",
+			funFact: "This was her debut album but has since been removed from all streaming platforms.",
 			coverLink: "https://images.genius.com/638e4c9f2e85e03f55b1b1cb91d38c69.1000x1000x1.jpg"
 		},
 		{
@@ -39,7 +39,7 @@ function AlbumList() {
 				{ id: 10, title: "Honest" },
 				{ id: 11, title: "Interlude III" }
 			],
-			funFact: "Bad Ideas was originally planned to be released as three separate EPs",
+			funFact: "Bad Ideas was originally planned to be released as three separate EPs.",
 			coverLink: "https://m.media-amazon.com/images/I/711FaNttF5L._AC_SL1500_.jpg"
 		}
 	]);
