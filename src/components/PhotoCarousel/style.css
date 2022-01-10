@@ -1,0 +1,6 @@
+.cover-image {
+	max-width: 1200px;
+	width: 100%;
+	max-height: 640px;
+	object-fit: cover;
+}
