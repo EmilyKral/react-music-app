@@ -1,5 +1,5 @@
 import React from "react";
-import { Bio } from "../../components";
+import { Bio, AlbumList } from "../../components";
 
 function Introduction() {
 	return (

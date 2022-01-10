@@ -1,7 +1,8 @@
 import React from "react";
+import { AlbumList } from "../../components";
 
 function Music() {
-	return <div></div>;
+	return <AlbumList />;
 }
 
 export default Music;
