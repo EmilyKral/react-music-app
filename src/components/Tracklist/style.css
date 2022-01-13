@@ -1,6 +1,10 @@
-.track {
-	display: flex;
+.tracks-div {
+	padding-left: 10px;
+	padding-top: 28px;
+	width: 49%;
 }
 
-.track button {
+.track-list {
+	padding: 0;
+	margin: 0 auto;
 }

@@ -1,18 +1,14 @@
-import React from "react";
-import { LikeButton } from "..";
+import React, { useState } from "react";
+import { Track } from "..";
 import "./style.css";
 
 function Tracklist({ tracklist, albumId }) {
 	const tracklistItems = tracklist.map(track => (
-		<li key={albumId + "-" + track.id} className="track">
-			<p>{track.title}</p>
-			<LikeButton />
-		</li>
+		<Track key={albumId + "-" + track.id} track={track} />
 	));
 	return (
 		<div className="tracks-div">
-			<p>Tracks:</p>
-			<ul>{tracklistItems}</ul>
+			<ul className="track-list">{tracklistItems}</ul>
 		</div>
 	);
 }

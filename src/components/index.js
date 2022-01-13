@@ -4,3 +4,5 @@ export { default as Album } from "./Album";
 export { default as Tracklist } from "./Tracklist";
 export { default as PhotoCarousel } from "./PhotoCarousel";
 export { default as LikeButton } from "./LikeButton";
+export { default as LyricsButton } from "./LyricsButton";
+export { default as Track } from "./Track";

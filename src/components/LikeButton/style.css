@@ -1,12 +1,3 @@
 .like-button {
-	border: none;
-	background-color: white;
-	padding: 5px 10px;
-	border-radius: 5px;
-	color: black;
-	font-size: 17px;
-}
-
-.liked {
-	color: rgb(45, 177, 78);
+	/* width: 70px; */
 }

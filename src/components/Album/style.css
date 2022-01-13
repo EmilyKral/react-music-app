@@ -1,9 +1,21 @@
 .album {
 	display: flex;
+	margin-bottom: 20px;
 }
 
 .album-info {
-	width: 50%;
+	width: 49%;
+	padding-right: 10px;
+}
+
+.release-date {
+	font-size: 0.8em;
+}
+
+.album-info h3 {
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-size: 1.2em;
 }
 
 .album-cover {
@@ -29,9 +41,18 @@
 }
 
 .show-tracks {
-	width: 110px;
+	width: 130px;
 }
 
 .show-fact {
-	width: 125px;
+	width: 145px;
+}
+
+@media only screen and (max-width: 1200px) {
+	.album-info {
+		width: 600px;
+	}
+	.album-cover {
+		width: 600px;
+	}
 }
